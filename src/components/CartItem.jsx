@@ -1,4 +1,4 @@
-import { currencyFormatter } from '../util/formatting.js';
+import { currencyFormatter } from "../util/formatting.js";
 
 export default function CartItem({
   name,
@@ -8,7 +8,7 @@ export default function CartItem({
   onDecrease,
 }) {
   return (
-    <li className="cart-item">
+    <li className="cart-item-actions">
       <p>
         {name} - {quantity} x {currencyFormatter.format(price)}
       </p>
